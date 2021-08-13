@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'tienda-web'`, () => {
+  it(`should have as title 'latienda-web'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('tienda-web');
+    expect(app.title).toEqual('latienda-web');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('tienda-web app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('latienda-web app is running!');
   });
 });
