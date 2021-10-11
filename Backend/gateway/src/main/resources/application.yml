@@ -8,11 +8,11 @@ spring:
     gateway:
       routes:
         - id: persona-service
-          uri: lb:/persona-service
+          uri: lb://persona-service
           predicates:
-            - Path=/api/person/**
+            - Path=/api/persona/**
           filters:
-            - RewritePath= /api/(?<person>.*), /$\{person}
+            - RewritePath= /api/(?<persona>.*), /$\{persona}
             
 eureka:
   client:
